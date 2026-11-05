@@ -43,6 +43,7 @@ dialog h2{margin:8px 0;font-size:25px}
 .actions{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
 .actions button{padding:7px 10px;border:2px solid var(--edge);background:#ffec9d;box-shadow:2px 2px 0 var(--edge)}
 .actions:empty{display:none}
+#file-message{white-space:pre-line}
 #feedback{font-weight:bold;color:#095157}
 #feedback:empty{display:none}
 </style>
@@ -79,8 +80,8 @@ dialog h2{margin:8px 0;font-size:25px}
 <script>
 const tasks = {
   laptop: {
-    name:"Laptop", title:"The case fell off!", intro:"RayRay opened the laptop. A screw went missing and the bottom cover fell off. Check the places where it could have rolled.",
-    options:[["Check the desk","Just a pencil."],["Look under the desk","You found the screw and put the cover back on.",true],["Check the laptop bag","Only the charger."]],
+    name:"Laptop", title:"The case fell off!", intro:"RayRay asked AI, 'Why is my laptop fan so loud?' AI said, 'Take off the bottom cover and check the fan.'\n\nHe took out the screws and set them next to his pencil. When he put the laptop back together, one screw was missing. As soon as he picked it up, the bottom cover fell off.\n\nHe remembers hearing a tiny metal clink under the desk. Where should he look?",
+    options:[["Check the desk","Just the pencil. The clink came from below."],["Look under the desk","You found the screw next to a desk leg and secured the bottom cover.",true],["Check the laptop bag","Only the charger."]],
   },
   tablet: {
     name:"Tablet", title:"Tablet dropped!", intro:"RayRay played on his tablet during the exam and dropped it. Pick the first step before trying to play again.",
